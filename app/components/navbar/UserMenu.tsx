@@ -49,7 +49,7 @@ export default function UserMenu ({ currentUser }: UserMenuProps) {
         >
           <AiOutlineMenu className='text-2xl' />
           <div className='hidden md:block'>
-            <Avatar />
+            <Avatar src={currentUser?.image} />
           </div>
         </div>
       </div>
