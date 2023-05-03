@@ -102,16 +102,27 @@ export default function Modal ({
                 className='flex items-center justify-center p-6 border-b-[1px] 
               border-solid rounded-t relative'
               >
+                <div className='text-lg font-semibold'>
+                  {title || 'Modal Title'}
+                </div>
                 <button
                   className='
-                p-1 border-0 hover:opcaity-70 transition absolute left-9
+                  absolute 
+                  flex
+                  justify-center
+                  items-center
+                  p-1
+                  border-0
+                  right-9
+                  transition
+                  hover:bg-neutral-100
+                  rounded-full
+                  h-8
+                  w-8
                 '
                 >
                   <IoMdClose size={18} onClick={handleClose} />
                 </button>
-                <div className='text-lg font-semibold'>
-                  {title || 'Modal Title'}
-                </div>
               </div>
               {/* Body */}
               <div className='relative p-6 flex-auto'>{body}</div>
